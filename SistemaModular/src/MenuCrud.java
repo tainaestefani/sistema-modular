@@ -18,7 +18,6 @@ public class MenuCrud {
                     "2. Listar\n" +
                     "3. Atualizar\n" +
                     "4. Remover\n" +
-                    "5. Exibir Log\n" +
                     "0. Sair\n" +
                     "Escolha: ");
 
@@ -30,7 +29,6 @@ public class MenuCrud {
                     case 2 -> listar(lista);
                     case 3 -> atualizar(lista, formato);
                     case 4 -> remover(lista);
-                    case 5 -> exibirLog();
                     case 0 -> {
                         System.out.println("Saindo...");
                         return;
@@ -128,7 +126,7 @@ public class MenuCrud {
         return true;
     }
 
-    private void exibirLog() {
+    public void exibirLog() {
         if (logOperacoes.isEmpty()) {
             System.out.println("Nenhuma operação realizada.");
         } else {

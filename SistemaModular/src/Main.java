@@ -21,6 +21,7 @@ public class Main {
                     "1. Módulo de EPIs\n" +
                     "2. Módulo de Funcionários\n" +
                     "3. Módulo de Empréstimos\n" +
+                    "4. Log de Operações\n" +
                     "0. Sair\n" +
                     "Escolha uma opção: ");
             int opcao = scanner.nextInt();
@@ -30,6 +31,7 @@ public class Main {
                 case 1 -> menuCrud.mostrarMenu(epis, "Nome - Quantidade - Descrição");
                 case 2 -> menuCrud.mostrarMenu(funcionarios, "Nome - E-mail");
                 case 3 -> menuCrud.mostrarMenu(emprestimos, "Nome EPI - Nome funcionário - Data empréstimo - Data devolução");
+                case 4 -> menuCrud.exibirLog();
                 case 0 -> {
                     System.out.println("Saindo...");
                     return;
