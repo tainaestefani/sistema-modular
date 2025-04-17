@@ -65,9 +65,27 @@ Organizado em pacotes para modularidade e clareza:
 
 ## 🚀 Como Executar
 
-1. Clone este repositório:
-   ```bash
+1. **Clone o repositório:**
+   ```
    https://github.com/tainaestefani/sistema-modular.git
+   ```
+   
+2. **Abra o projeto na sua IDE favorita:**
+   - Utilize IDEs como IntelliJ IDEA ou Eclipse.
+
+3. **Configurar o JDK:**
+   - Certifique-se de ter o JDK 11 ou superior instalado.
+   - Configure o JDK na sua IDE:
+      - IntelliJ IDEA: File → Project Structure → Project → Project SDK.
+      - Eclipse: Window → Preferences → Java → Installed JREs → Add → Selecione o JDK instalado.
+
+3. **Compile e execute o projeto:**
+   - Configure a classe `Main` como ponto de entrada e execute.
+   - Ou use o terminal:
+       ```
+       javac Main.java MenuCrud.java
+       java Main
+       ```
 
 ## 👩‍💻 Autor
 <div align="left">
